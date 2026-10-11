@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F7E8EA" />
+  <title>Funding the Future 🍒</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <a class="brand" href="#overview" data-page="overview" aria-label="Funding the Future home">
+        <span class="brand-icon" aria-hidden="true">💷</span>
+        <span class="brand-name">Funding the Future<span class="brand-period">.</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-page="overview">Overview</button>
+        <button class="nav-link" data-page="jars">My Jars</button>
+        <button class="nav-link" data-page="finds">My Finds</button>
+      </nav>
+
+      <div class="header-note">
+        <span class="header-cherry" aria-hidden="true">♥</span>
+        <span>Little by little</span>
+      </div>
+    </header>
+
+    <main id="main-content">
+
+      <!-- OVERVIEW -->
+      <section class="page active" id="page-overview" data-section="overview">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR MONEY, YOUR NEXT CHAPTER</p>
+            <h1>Dream a little.<br><span>Save a lot.</span></h1>
+            <p class="hero-description">
+              Every little bit brings the things you love closer.
+              Make room for your goals, your treats and everything in between.
+            </p>
+            <button class="button button-red" data-page="jars">
+              Explore my jars <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <span class="art-sparkle sparkle-one">💷</span>
+            <span class="art-sparkle sparkle-two">✧</span>
+            <div class="art-circle">
+              <span class="art-heart">♥</span>
+              <span class="art-script">for the things<br>you dream of</span>
+              <span class="art-flower">✳</span>
+            </div>
+            <span class="art-caption">A LITTLE CLOSER, EVERY DAY</span>
+          </div>
+        </div>
+
+        <div class="section-heading overview-heading">
+          <div>
+            <p class="eyebrow">THE BIG PICTURE</p>
+            <h2>Your money at a glance<span class="heading-period">.</span></h2>
+          </div>
+          <span class="section-aside">Your own little money space</span>
+        </div>
+
+        <div class="overview-stats">
+          <article class="stat-card stat-primary">
+            <div class="stat-topline">
+              <span class="stat-label">TOTAL ACROSS YOUR JARS</span>
+              <span class="stat-icon">£</span>
+            </div>
+            <p class="stat-value" id="overview-total">£0.00</p>
+            <p class="stat-footnote">Every penny has a place.</p>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-topline">
+              <span class="stat-label">YOUR SAVINGS GOALS</span>
+              <span class="stat-icon stat-icon-pink">↗</span>
+            </div>
+            <p class="stat-value" id="overview-goals">0</p>
+            <p class="stat-footnote">Jars with a goal in mind.</p>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-topline">
+              <span class="stat-label">ON YOUR WISHLIST</span>
+              <span class="stat-icon stat-icon-pink">♡</span>
+            </div>
+            <p class="stat-value" id="overview-finds">0</p>
+            <p class="stat-footnote">Lovely things to look forward to.</p>
+          </article>
+        </div>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">GIVE YOUR MONEY A PURPOSE</p>
+              <h2>Your jars<span class="heading-period">.</span></h2>
+            </div>
+            <button class="text-link" data-page="jars">All my jars <span>↗</span></button>
+          </div>
+          <div class="jar-grid overview-jar-grid" id="overview-jars"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">THE WISH LIST</p>
+              <h2>Little things. Big dreams<span class="heading-period">.</span></h2>
+            </div>
+            <button class="text-link" data-page="finds">See my Finds <span>↗</span></button>
+          </div>
+          <div class="find-grid overview-find-grid" id="overview-finds"></div>
+        </section>
+
+        <div class="closing-note">
+          <span aria-hidden="true">♥</span>
+          <p>Good things take time. You're getting there.</p>
+          <span aria-hidden="true">♥</span>
+        </div>
+      </section>
+
+      <!-- MY JARS -->
+      <section class="page" id="page-jars" data-section="jars">
+        <div class="page-intro">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR MONEY, BEAUTIFULLY ORGANISED</p>
+          <h1>Every jar has <span>a purpose.</span></h1>
+          <p>Give your money somewhere to go, and something to grow towards.</p>
+        </div>
+
+        <div class="page-toolbar">
+          <div>
+            <p class="toolbar-label">YOUR COLLECTION</p>
+            <p class="toolbar-description" id="jars-count">Your money, your way.</p>
+          </div>
+          <button class="button button-red" id="add-jar-button">
+            <span aria-hidden="true">＋</span> Create a jar
+          </button>
+        </div>
+
+        <div class="jar-grid" id="all-jars"></div>
+
+        <div class="page-bottom-note">
+          <span aria-hidden="true">🎧</span>
+          <p>There's no one right way to save. Make it work for you.</p>
+        </div>
+      </section>
+
+      <!-- MY FINDS -->
+      <section class="page" id="page-finds" data-section="finds">
+        <div class="page-intro finds-intro">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> THE THINGS YOU'RE LOOKING FORWARD TO</p>
+          <h1>Meet your <span>next Finds.</span></h1>
+          <p>Save towards the little treats, the big plans and everything in between.</p>
+        </div>
+
+        <div class="finds-summary">
+          <div>
+            <p class="toolbar-label">YOUR WISHLIST</p>
+            <p class="finds-summary-number" id="finds-count">0 Finds</p>
+          </div>
+          <div class="finds-summary-divider"></div>
+          <div>
+            <p class="toolbar-label">TOTAL SAVED TOWARDS FINDS</p>
+            <p class="finds-summary-number" id="finds-saved-total">£0.00</p>
+          </div>
+          <button class="button button-red" id="add-find-button">
+            <span aria-hidden="true">＋</span> Add a Find
+          </button>
+        </div>
+
+        <div class="finds-filter-row">
+          <span class="filter-label">A little something for…</span>
+          <div class="filter-chips" id="finds-filters">
+            <button class="filter-chip active" data-filter="all">Everything</button>
+            <button class="filter-chip" data-filter="Tiny Treat">Tiny treats</button>
+            <button class="filter-chip" data-filter="Small Spend">Small spends</button>
+            <button class="filter-chip" data-filter="Worth the Splurge">Splurge-worthy</button>
+            <button class="filter-chip" data-filter="Slight Sting">Slight sting</button>
+            <button class="filter-chip" data-filter="Dream Purchase">Dream purchases</button>
+          </div>
+        </div>
+
+        <div class="find-grid" id="all-finds"></div>
+
+        <div class="page-bottom-note">
+          <span aria-hidden="true">♥</span>
+          <p>Make a little plan. Give a little dream somewhere to grow.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#overview" data-page="overview">Funding the Future<span>.</span></a>
+      <p>A little planning for a lot of lovely things. <span aria-hidden="true">♥</span></p>
+    </footer>
+
+  </div>
+
+  <!-- REUSABLE MODAL -->
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close dialog">×</button>
+      <p class="eyebrow" id="modal-eyebrow">A LITTLE SOMETHING</p>
+      <h2 id="modal-title">Let's get started<span class="heading-period">.</span></h2>
+      <p class="modal-description" id="modal-description"></p>
+      <form id="modal-form">
+        <div id="modal-fields"></div>
+        <p class="form-error" id="modal-error" role="alert" hidden></p>
+        <div class="modal-actions">
+          <button type="button" class="button button-soft" id="modal-cancel">Cancel</button>
+          <button type="submit" class="button button-red" id="modal-submit">Save</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <!-- TOAST NOTIFICATIONS -->
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+</body>
+</html>
+
+    <script src="/script.js"></script>
+  </body>
+
+</html>
